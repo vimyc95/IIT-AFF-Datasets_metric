@@ -5,7 +5,7 @@
 ### Overview
 This program is used for computing metrics on the IIT-AFF dataset, evaluating the performance of the final Affordance Mask.
 
-### Maltab
+### Matlab
 #### ToolBox Dependencies
 * Image Processing Toolbox
 * Statistics and Machine Learning Toolbox
