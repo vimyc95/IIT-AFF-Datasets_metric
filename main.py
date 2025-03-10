@@ -50,7 +50,7 @@ def WFb(FG,GT):
     Et = E.copy()
     Et[~GT] = E[IDXT[0, ~GT], IDXT[1, ~GT]] #To deal correctly with the edges of the foreground region
     # EA = imfilter(Et,K);
-    EA = convolve(Et, K, mode='reflect') # convolve == imfilter, reflect is matlab defalut mode
+    EA = convolve(Et, K, mode='constant') # convolve == imfilter, constant is imfilter's mode on Matlab
 
     MIN_E_EA = E.copy()
     MIN_E_EA[GT & (EA < E)] = EA[GT & (EA < E)]
